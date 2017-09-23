@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 "2D Convolution (Image Filtering) for image."
 
 # Original image with 'Salt-and-pepper' noise addition
-img = cv2.imread('./../images/Fig0318(b)(ckt-board-slt-pep-both-0pt2).tif',0)
+img = cv2.imread('./../images/shirt_video.jpg',0)
 
 kernel = np.ones((5,5), np.float32) / 25
 dst = cv2.filter2D(img, -1, kernel)
